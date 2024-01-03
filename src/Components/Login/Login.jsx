@@ -1,6 +1,6 @@
 import React from 'react'
-
-function Banner() {
+import './Login.css'
+function Login() {
   return (
     <div>
         
@@ -8,4 +8,4 @@ function Banner() {
   )
 }
 
-export default Banner
+export default Login
