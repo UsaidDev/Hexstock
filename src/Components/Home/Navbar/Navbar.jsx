@@ -31,7 +31,7 @@ function Navbar() {
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <li className="nav-item d-sm-block">
-              <a className="nav-link" href="#/">Search</a>
+              <a className="nav-link" href="#/">Login</a>
             </li>
             <li className="nav-item d-sm-block">
               <a className="nav-link" href="#/">Cart</a>
