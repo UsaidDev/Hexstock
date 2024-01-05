@@ -44,6 +44,35 @@ function Banner() {
           </div>
         </div>
       </div>
+
+      <div className="container">
+        <div className="row">
+          <div className="col-12 col-md-4 col-lg-4">
+            <div className="list-item-1">
+              <div className="list-title">
+                <h3>Sunflower Clock</h3>
+                <h3>Quartz Hands</h3>
+              </div>
+            </div>
+          </div>
+          <div className="col-12 col-md-4 col-lg-4">
+            <div className="list-item-2">
+              <div className="list-title">
+                <h3>Chair kimi No Isu</h3>
+                <h3>Project</h3>
+              </div>
+            </div>
+          </div>
+          <div className="col-12 col-md-4 col-lg-4">
+            <div className="list-item-3">
+              <div className="list-title">
+                <h3>Sweeper and Dustpan</h3>
+                <h3>by Jan Kochanski</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

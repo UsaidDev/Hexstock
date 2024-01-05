@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Poppins:ital,wght@0,500;1,300;1,500&display=swap');
 .slider-image {
     background: url('../../../assets/images/image-39.jpg');
     height: 100vh;
@@ -10,7 +10,6 @@
     padding-top: 10%;
     margin-left: 3rem;
 }
-
 .slider-heading {
     font-family: sans-serif;
     font-weight: 600;
@@ -25,6 +24,75 @@
     cursor: pointer;
     text-align: center;
 }
+.list-item-1 {
+    height:200px;
+    background: url('../../../assets/images/image-6.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.list-title{
+    margin: 10px;
+    padding: 5rem 10px;
+}
+.list-item-1 h3{
+    font-size:18px ;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+}
+.list-item-1:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.15);
+    transition: 0.3S;
+}
+
+.list-item-2{
+    height:200px;
+    background: url('../../../assets/images/image-7.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.list-item-2 h3{
+    font-size:18px ;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+}
+.list-item-2:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.15);
+    transition: 0.3S;
+}
+
+.list-item-3{
+    height:200px;
+    background: url('../../../assets/images/image-8.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.list-item-3 h3{
+    font-size:18px ;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+}
+.list-item-3:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.15);
+    transition: 0.3S;
+}
+
+
+
 @media (max-width: 576px) {
     .slider-image {
         height: 100vh;
@@ -32,6 +100,7 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     .slider-text {
         margin-left: 2rem;
     }
