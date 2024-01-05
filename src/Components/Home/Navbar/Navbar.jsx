@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Navbar.css'
 import Logo from '../../../assets/images/image-17.png'
+import { Link } from 'react-router-dom'
+import { FirebaseContext } from '../../FirebaseContext/FirebaseContext'
+
 function Navbar() {
+  const { firebase } = useContext(FirebaseContext)
+  console.log(firebase)
   return (
     <>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -18,7 +23,7 @@ function Navbar() {
             <li className="nav-item">
               <a className="nav-link" href="#/">Shop</a>
             </li>
-            
+
             <li className="nav-item">
               <a className="nav-link" href="#/">Blog</a>
             </li>
@@ -31,7 +36,9 @@ function Navbar() {
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <li className="nav-item d-sm-block">
-              <a className="nav-link" href="#/">Login</a>
+              <Link to={'/login'}>
+                <a className="nav-link" href="#/">Login</a>
+              </Link>
             </li>
             <li className="nav-item d-sm-block">
               <a className="nav-link" href="#/">Cart</a>
