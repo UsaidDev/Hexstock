@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Poppins:ital,wght@0,500;1,300;1,500&display=swap');
+
+.wrapper{
+    width: 330px;
+    padding: 2rem 1rem;
+    margin: 50px auto;
+   background: #FFF;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.wrapper h1{
+    text-align: center;
+    color: #07001f;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-family: 'Poppins',sans-serif;
+}
+.wrapper input{
+    width: 92%;
+    outline: none;
+    border: 1px solid #FFF;
+    padding: 12px 20px;
+    margin-bottom:10px;
+    border-radius: 20px;
+    background:#e4e4e4;
+}
+.wrapper input::placeholder{
+    font-family: 'Poppins',sans-serif;
+}
+.wrapper button{
+    background: rgb(17, 107, 143) ;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    width: 90%;
+    font-family: 'Poppins',sans-serif;
+}
+.wrapper button:hover{
+    background-color: rgb(17, 107, 143,0.877);
+}
+.member{
+    font-family: 'Poppins',sans-serif;
+}
