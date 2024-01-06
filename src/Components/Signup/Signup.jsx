@@ -21,7 +21,7 @@ function Signup() {
           Email: Email,
         }).then(() => {
           alert("Account Created Successfully")
-          navigate('/')
+          navigate('/login')
         }).catch((error) => {
           console.log(error)
         })
