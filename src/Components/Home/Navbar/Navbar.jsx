@@ -49,7 +49,9 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item d-sm-block">
+              <Link to={'sell'}>
               <a className="nav-link" href="#/">SellProduct</a>
+              </Link>
             </li>
           </form>
         </div>
