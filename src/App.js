@@ -1,4 +1,3 @@
-import React from 'react';
 import Home from './Page/Home';
 import Login from '../src/Page/Login';
 import Signup from '../src/Page/Signup'
