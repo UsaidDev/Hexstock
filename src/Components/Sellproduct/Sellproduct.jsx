@@ -13,7 +13,6 @@ function Sellproduct() {
   const date = new Date();
   const navigate = useNavigate();
 
-
   useEffect(() => {
     firebase.auth().onAuthStateChanged((user) => {
       Setuser(user)

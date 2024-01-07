@@ -7,8 +7,8 @@ function Login() {
   const [email, Setemail] = useState('');
   const [password, Setpassword] = useState('');
   const { firebase } = useContext(FirebaseContext);
-  const navigate = useNavigate()
-
+  const navigate = useNavigate();
+  
   const handleSubmit = () => {
     firebase.auth().signInWithEmailAndPassword(email, password).then(() => {
       alert('Login SuccessFully Completed');
@@ -17,6 +17,7 @@ function Login() {
       alert(error);
     })
   }
+
   return (
     <div>
       <div className="wrapper">

@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './Banner.css';
-
+import { FirebaseContext } from '../../FirebaseContext/FirebaseContext'
 function Banner() {
+  const { firebase } = useContext(FirebaseContext);
+  const [product, Setproduct] = useState([])
+
+  useEffect(() => {
+    firebase.firestore().collection('products').get().then((snapshot) => {
+      const Allpost = snapshot.docs.map((products) => {
+        return {
+          ...products.data(),
+          id: products.id
+        }
+      })
+      Setproduct(Allpost)
+    })
+  }, [firebase])
+  console.log(product)
   return (
     <div>
       <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
@@ -78,17 +93,21 @@ function Banner() {
         <h2 className='text-center'>Trending Products</h2>
         <p className='text-center'>Check out our latest products below.</p>
         <div className="row">
-          
-          <div className="col-12 col-md-3 col-lg-3">
-            <div className="card">
-              <div className="card-image card-img-top"></div>
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#/" className="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
+
+          {
+            product.map((product) => (
+              <>
+                <div className="col-12 col-md-3 col-lg-3">
+                  <div className="card">
+                    <img src={product.url} alt="Loding" className='card-image' />
+                    <h4>₹{product.price}</h4>
+                    <p className='card-para'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, ducimus?</p>
+                    <span className='card-date'>{product.createDate}</span>
+                  </div>
+                </div>
+              </>
+            ))
+          }
         </div>
       </div>
     </div>
