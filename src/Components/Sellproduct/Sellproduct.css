@@ -7,6 +7,7 @@
     background-color: rgba(20, 030, 100);
     margin-top: 30px;
     border-radius: 10px;
+    margin-bottom: 5vh;
 }
 .wrapper-login h2{
     font-size: 1.9rem;
@@ -23,7 +24,7 @@
     border-radius: 5px;
     border: none;
     outline: none;
-    background-color: #635b5b;
+    background-color: #7a7272;
     color: lightcyan;
 }
 .wrapper-login button{
@@ -42,4 +43,9 @@
 .wrapper-login input::placeholder{
     color: white;
     font-family: 'Poppins',sans-serif;
+}
+.product-image{
+    height: 25vh;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }

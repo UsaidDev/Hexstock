@@ -8,7 +8,7 @@ function Signup() {
   const [Phone, Setphone] = useState('');
   const [Email, Setemail] = useState('');
   const [Password, Setpassword] = useState('');
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const { firebase } = useContext(FirebaseContext)
   const handleSubmit = () => {
@@ -20,10 +20,10 @@ function Signup() {
           Phone: Phone,
           Email: Email,
         }).then(() => {
-          alert("Account Created Successfully")
-          navigate('/login')
+          alert("Account Created Successfully");
+          navigate('/login');
         }).catch((error) => {
-          console.log(error)
+          console.log(error);
         })
       })
     })
@@ -47,4 +47,4 @@ function Signup() {
   )
 }
 
-export default Signup
+export default Signup;
